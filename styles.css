@@ -393,6 +393,62 @@ nav {
     transform: scale(1.15);
 }
 
+/* footer */
+.footer {
+    background: url("assets/footer-bg.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #FFFFFF;
+    padding: 100px 20px;
+}
+
+.footer-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.footer-logo {
+    font-size: 3.5rem;
+    font-weight: 800;
+    margin-bottom: 32px;
+}
+
+.footer-logo span {
+    background: linear-gradient(to right, #F7E93F, #FB09B4, #9100F8);
+    background-clip: text;
+    color: transparent;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 32px;
+    flex-wrap: wrap;
+    cursor: pointer;
+}
+
+.footer-links a {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: 0.3s ease;
+    transition: 0.3s;
+}
+
+.footer-links a:hover {
+    transform: translateY(-6px);
+}
+
+.footer-copy {
+    font-size: 1rem;
+}
+
 /* responsive */
 @media screen and (max-width:576px) {
 
@@ -419,6 +475,7 @@ nav {
     .hero {
         background-position: center;
         background-size: cover;
+        padding-top: 40px;
     }
 
     .hero-content {
