@@ -348,6 +348,50 @@ nav {
     line-height: 1.5rem;
 }
 
+.section-title {
+    font-size: 3rem;
+    margin-bottom: 40px;
+}
+
+.host-card {
+    max-width: 75rem;
+    margin: 0 auto;
+    background: #250D44;
+    border-radius: 40px;
+    padding: 2.5rem;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    text-align: left;
+}
+
+.host-info h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.host-info p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.host-social {
+    display: flex;
+    gap: 8px;
+}
+
+.host-social img {
+    width: 1.5rem;
+    cursor: pointer;
+    transition: 0.3s;
+    border: 1px solid #533C72;
+    border-radius: 40px;
+}
+
+.host-social img:hover {
+    transform: scale(1.15);
+}
 
 /* responsive */
 @media screen and (max-width:576px) {
@@ -427,5 +471,40 @@ nav {
     .box {
         width: 100%;
         padding: 16px;
+    }
+
+    /* episodes */
+    .episodes {
+        padding: 40px 20px;
+    }
+
+    .episodes-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        margin-bottom: 60px;
+    }
+
+    .section-title {
+        font-size: 2rem;
+        margin-bottom: 24px;
+    }
+
+    .host-card {
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 24px 16px;
+        border-radius: 28px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .host-social {
+        justify-content: center;
+        margin-top: 16px;
+    }
+
+    .host-social img {
+        width: 32px;
+        padding: 6px;
     }
 }
