@@ -42,6 +42,18 @@
     transform: translateY(-3px);
 }
 
+.key-number {
+    font-size: 3rem;
+    font-weight: 900;
+    color: #00FF88;
+}
+
+.key-name {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.25rem;
+}
+
 
 /* main css */
 header {
@@ -80,6 +92,7 @@ nav {
 /* hero */
 .hero {
     background-image: url(assets/hero-bg.png);
+    background-color: #1A0B2E;
     background-position: center;
     background-repeat: no-repeat;
     display: flex;
@@ -151,6 +164,45 @@ nav {
     font-size: 16px;
     font-weight: 400;
     margin-bottom: 24px;
+}
+
+/* about */
+.about {
+    background-color: #1A0B2E;
+    color: #FFFFFF;
+    text-align: center;
+
+}
+
+.about-text {
+    width: 66%;
+    max-width: 75rem;
+    margin: 0 auto;
+    place-items: center;
+    padding-top: 50px;
+}
+
+.about-text h3 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+.about-text p {
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 160px;
+}
+
+.about-key {
+    display: grid;
+    gap: 80px;
+    grid-template-columns: repeat(4, 1fr);
+    padding-bottom: 120px;
+}
+
+.about-key h4 {
+    margin-bottom: 8px;
 }
 
 
