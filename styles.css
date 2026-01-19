@@ -1,0 +1,83 @@
+.font-inter {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+}
+
+/* shared css */
+.linear-gradient {
+    background: linear-gradient(to right, #F7E93F, #FB09B4, #9100F8);
+    background-clip: text;
+    color: transparent;
+}
+
+.btn {
+    background: linear-gradient(to right, #F7E93F, #FB09B4, #9100F8);
+    border: none;
+    border-radius: 40px;
+    padding: 12.5px 16px;
+    font-size: 16px;
+    font-weight: 600px;
+    color: white;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
+
+/* main css */
+header {
+    background-color: #412567;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo h2 {
+    font-size: 48px;
+    font-weight: 800;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+.menu a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 120%;
+    color: #FFFFFF;
+}
+
+.mobile-extra {
+    display: none;
+}
+
+/* responsive */
+@media screen and (max-width:576px) {
+
+    .menu,
+    .buttons {
+        display: none;
+    }
+
+    nav {
+        justify-content: space-between;
+        padding: 18px 20px;
+    }
+
+    .mobile-extra {
+        display: block;
+    }
+
+    .mobile-extra img {
+        cursor: pointer;
+    }
+}
