@@ -22,6 +22,7 @@
     display: inline-flex;
     align-items: center;
     gap: 10px;
+    transition: 0.3s ease;
 }
 
 .btn-green {
@@ -33,7 +34,12 @@
     font-weight: 600;
     cursor: pointer;
     padding: 12px 16px;
+    transition: 0.3s ease;
+}
 
+.btn:hover,
+.btn-green:hover {
+    transform: translateY(-3px);
 }
 
 
@@ -75,6 +81,7 @@ nav {
 .hero {
     background-image: url(assets/hero-bg.png);
     background-position: center;
+    background-repeat: no-repeat;
     display: flex;
     justify-content: center;
     text-align: center;
@@ -85,12 +92,12 @@ nav {
 
 .hero-content {
     /* border: 2px solid red; */
-    max-width: 550px;
+    max-width: 34.4rem;
     margin: 101px auto;
 }
 
 .hero-circle {
-    width: 350px;
+    width: 21.8rem;
     margin: 0 auto;
     position: relative;
     transform: scale(1);
@@ -102,7 +109,7 @@ nav {
 }
 
 .hero-circle img:last-of-type {
-    width: 116px;
+    width: 7.25rem;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -113,13 +120,14 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 8px;
+    gap: .5rem;
 }
+
+
 
 .badge {
     position: absolute;
-    /* top: 16px;
-    right: 30px; */
+
     margin-left: 252px;
     margin-top: 16px;
     background: #00FF88;
@@ -165,5 +173,33 @@ nav {
 
     .mobile-extra img {
         cursor: pointer;
+    }
+
+    /* hero  */
+
+    .hero {
+        background-position: center;
+        background-size: cover;
+    }
+
+    .hero-content {
+        max-width: 100%;
+        margin: 0;
+    }
+
+    .hero-circle {
+        width: 200px;
+    }
+
+    .hero-circle img:last-of-type {
+        width: 80px;
+    }
+
+    .badge {
+        margin: 0;
+        top: 14px;
+        right: 10px;
+        font-size: 13px;
+        padding: 6px 14px;
     }
 }
